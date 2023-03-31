@@ -17,6 +17,7 @@ export const Task = function ({name, completed, onDelete, onEdit, onToggle}) {
         setNewName('');
     }
 
+    //New form for edit task
     if(isEditing) {
         return(
             <form onSubmit={handleEditTask}>
@@ -28,11 +29,15 @@ export const Task = function ({name, completed, onDelete, onEdit, onToggle}) {
     }
 
     return(
-        <div>
-            <input type="checkbox" checked={completed} onChange={onToggle}/>
+        <div className='task'>
+            <input type="checkbox" checked={completed} onChange={onToggle} className='check'/>
             <span className={completed ? 'completed-task' : ''}>{name}</span>
-            <button onClick={() => setIsEditing(true)}><FaEdit/></button>
-            <button onClick={onDelete}><FaTrashAlt/></button>
+            <span>
+                <button onClick={() => setIsEditing(true)} className='edit'><FaEdit/></button>
+                <button onClick={onDelete}><FaTrashAlt/></button>
+            </span>
+
+
         </div>
     );
 }

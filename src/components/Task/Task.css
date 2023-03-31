@@ -1,0 +1,21 @@
+.task {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #adcce0;
+}
+
+.check {
+    margin-right: 0.5rem;
+}
+
+.edit {
+    margin-right: 0.5rem;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    text-decoration-color: #4a9bc1;
+}

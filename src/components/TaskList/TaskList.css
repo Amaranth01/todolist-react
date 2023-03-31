@@ -1,3 +1,35 @@
-.completed-task {
-    text-decoration: line-through;
+
+
+.formTaskList {
+    background-color: white;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    width: 25rem;
+    text-align: center;
+}
+
+.addTaskForm {
+    border: #b8a96c 1.2px solid;
+    border-radius: 2px;
+    width: 15rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.addButton {
+    background-color: #4a9bc1;
+    color: white;
+    width: 2.6rem;
+    font-size: 1.3rem;
+    height: 2.25rem;
+}
+
+.task:hover {
+    background-color: rgba(240, 249, 255, 0.64);
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
 }
